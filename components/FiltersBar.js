@@ -74,7 +74,7 @@ return (
                 <div
                   onClick={() => toggleFilter(item)}
                   key={item}
-                  className="bg-[#0c1116] text-gray-300 rounded-md p-2 text-sm relative flex justify-between items-center flex-1"
+                  className="bg-[#0c1116] text-gray-300 rounded-md p-2 text-sm relative flex justify-between items-center flex-1 select-none"
                 >
                   <span>{item}</span>
                   <ChevronDown

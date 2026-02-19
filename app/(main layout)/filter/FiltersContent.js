@@ -17,24 +17,33 @@ const FiltersContent = () => {
   const { draftFilters, setDraftFilters, setAppliedFilters } = useContext(FiltersContext);
   const {filteredAnimes,loading} = useSelector(state=>state.animes);
   const dispatch = useDispatch();
-  useEffect(()=>{
-    if (!type && !status && !genre && !search) dispatch(fetchAnimesByFilters({filters:{...initialFilters}}));
+useEffect(() => {
+  let newFilters = { ...initialFilters };
 
-    if (!search){
+  if (!type && !status && !genre && !search) {
+    dispatch(fetchAnimesByFilters({ filters: newFilters }));
+    setDraftFilters(newFilters);
+    return;
+  }
 
-      const name_array=[];
-      const new_filters={...initialFilters,[type ? "type" : status ? "status" : "genre"]:[...name_array,type ? type : genre ? genre : status==="new_releases" ? "Not yet aired" : status==="ongoing" ? "Currently Airing" : "Finished Airing"]};
-      setDraftFilters(new_filters);
-      console.log('Drafts in Landing page', new_filters)
-      dispatch(fetchAnimesByFilters({filters:new_filters}))
-    }else {
-      const new_filters=search==="All" ? {...initialFilters} : {...initialFilters,search};
-      setDraftFilters(new_filters);
-      console.log('Drafts in Landing page', new_filters)
-      dispatch(fetchAnimesByFilters({filters:new_filters}))
-
+  if (search) {
+    newFilters = search === "All" ? { ...initialFilters } : { ...initialFilters, search };
+  } else {
+    if (type) newFilters.type = [type];
+    if (genre) newFilters.genre = [genre];
+    if (status) {
+      let statusValue = status;
+      if (status === "new_releases") statusValue = "Not yet aired";
+      else if (status === "ongoing") statusValue = "Currently Airing";
+      else if (status === "finished") statusValue = "Finished Airing";
+      newFilters.status = [statusValue];
     }
-  },[type, status, genre, search, dispatch, setDraftFilters])
+  }
+
+  setDraftFilters(newFilters);
+  dispatch(fetchAnimesByFilters({ filters: newFilters }));
+}, [type, status, genre, search, dispatch, setDraftFilters]);
+
 
   return (
     <>
