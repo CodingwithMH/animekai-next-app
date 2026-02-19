@@ -23,7 +23,7 @@ const LandingHeader = () => {
         <nav className={`${isOpen ? "" : "max-sm:hidden"} mx-auto`}>
           <ul className="max-sm:flex-col max-sm:text-center flex gap-8">
             <li>
-              <Link href={"/Home"} className="hover:text-[#ee559ce5]">
+              <Link href={"/home"} className="hover:text-[#ee559ce5]">
                 Home
               </Link>
             </li>
@@ -53,7 +53,7 @@ const LandingHeader = () => {
                 href={`/filter?status=ongoing`}
                 className="hover:text-[#ee559ce5]"
               >
-                Onngoing
+                Ongoing
               </Link>
             </li>
           </ul>

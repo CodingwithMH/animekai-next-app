@@ -34,7 +34,8 @@ const HomeHero = ({latest}) => {
   const currentItem=featured[currentIndex]?.anime;
   return (
     <>
-      {featured.length===0 ? <div className="text-white font-black text-3xl my-16 text-center h-screen flex justify-center items-center"><img src="/images/loading.svg" alt="" /></div> : <section key={currentIndex} className={`min-h-[calc(100vh+60px)] bg-cover bg-no-repeat bg-center relative flex items-center max-md:justify-center box-border transition-all duration-75 ease-in-out animate-fade overflow-x-hidden`} style={{ backgroundImage: `url(${currentItem?.landScapeImage})` }}>
+      {featured.length===0 ? <div className="text-white font-black text-3xl my-16 text-center h-[calc(100vh+60px)] flex justify-center items-center"><img src="/images/loading.svg" alt="" /></div> : 
+      <section key={currentIndex} className={`min-h-[calc(100vh+60px)] bg-cover bg-no-repeat bg-center relative flex items-center max-md:justify-center box-border transition-all duration-75 ease-in-out animate-fade overflow-x-hidden`} style={{ backgroundImage: `url(${currentItem?.landScapeImage})` }}>
       <div className='herogradient inset-0 h-full w-full absolute'/>
       <div className='text-white text-xl absolute z-10 bottom-16 right-9 flex gap-4 items-center'>
         <button onClick={()=>setCurrentIndex((prev)=>(prev - 1 + featured.length) % featured.length)}>&lt;</button>
