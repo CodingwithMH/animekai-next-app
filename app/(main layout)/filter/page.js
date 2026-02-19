@@ -1,4 +1,3 @@
-export const dynamic = "force-dynamic";
 "use client";
 import { useDispatch, useSelector } from "react-redux"
 import { useContext, useEffect } from "react";
