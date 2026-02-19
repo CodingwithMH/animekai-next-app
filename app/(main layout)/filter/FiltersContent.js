@@ -8,7 +8,7 @@ import { fetchAnimesByFilters } from "@/store/animeSlice";
 import FiltersContext, { initialFilters } from "@/context/FiltersContext";
 import PagingButtons from "@/components/PagingButtons";
 import { useSearchParams } from "next/navigation";
-const FiltersPage = () => {
+const FiltersContent = () => {
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
   const status = searchParams.get("status");
@@ -58,4 +58,4 @@ const FiltersPage = () => {
   )
 }
 
-export default FiltersPage
+export default FiltersContent;
