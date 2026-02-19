@@ -51,7 +51,7 @@ useEffect(() => {
       <FiltersBar />
       { 
       loading ? 
-      <div className="my-20 flex justify-center" style={{position:"relative", zIndex:"10"}}><img src="/images/loading.svg" alt="" /></div> :
+      <div className="my-20 flex justify-center" style={{position:"relative", zIndex:"9"}}><img src="/images/loading.svg" alt="" /></div> :
         <div className="m-10 mt-16 grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 text-white gap-5" style={{position:"relative",zIndex:9}}>
 
       {
