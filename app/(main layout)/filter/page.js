@@ -34,7 +34,7 @@ const FiltersPage = () => {
       dispatch(fetchAnimesByFilters({filters:new_filters}))
 
     }
-  },[type, status, genre, search])
+  },[type, status, genre, search, dispatch, setDraftFilters])
 
   return (
     <>
