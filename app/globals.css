@@ -21,6 +21,103 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.herogradient{
+    background: linear-gradient(90deg, #0c1116 0%, #0c1116cc 30%, #0c111666 60%, #0c111626 85%, #0c111600 100%);;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0%;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+.animate-fade {
+  animation: fadeIn 0.7s ease-out forwards;
+}
+[name="toptime"] option {
+    background-color: #1A1F27;
+    color: white;
+}
+[name="toptime"] option:checked {
+    background-color: rgb(0, 182, 0);
+}
+[name="toptime"] option:hover {
+    background-color: rgb(75, 75, 75);
+}
+.toplink::after {
+    content: "";
+    opacity: .1;
+    background-image: url(/images/claw.svg);
+    background-repeat: no-repeat;
+    min-width: 8rem;
+    min-height: 100%;
+    transition: opacity .3s, left .2s, top .1s;
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: -.5rem;
+    z-index: 12;
+}
+.toplink:hover::after {
+    content: "";
+    opacity: 1;
+    transform: translateX(-8px) translateY(5px);
+}
+.toplink::before {
+    content: "";
+    background: linear-gradient(110deg, #161a1f 0 65%, #161a1f00 90%);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+.toplink > * {
+    position: relative;
+    z-index: 13;
+}
+
+.filterspage {
+  position: relative;
+  z-index: 1;
+}
+
+.filterspage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #2ea6d2 0%, #330867 100%);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.filterspage::after{
+    content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#0c111600 0, #0c1116 100%);
+  z-index: 0;
+}
+.tops::before{
+    content: "";
+    position: relative;
+    height: 100%;
+}
+
+
+main{
+    scrollbar-width: none;
+}
+
+.searchresults {
+  scrollbar-width: 4px;
+  scrollbar-color: #E45F3A transparent;
 }

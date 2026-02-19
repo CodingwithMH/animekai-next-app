@@ -1,0 +1,53 @@
+[
+    {
+        "id":"1",
+        "name":"One Piece",
+        "categories":["Action", "Adventure", "Fantasy"],
+        "description":"Far from the city's noise lies Torishirojima—a quaint and peaceful island where time seems to move slowly. Hairi Takahara, a young boy nursing a wound...",
+        "rating":"PG-13",
+        "released":"1999",
+        "quality":"HD",
+        "image":"/images/home1.webp"
+    },
+    {
+        "id":"2",
+        "name":"Summer Pockets",
+        "categories":["Romance"],
+        "description":"Barely surviving in a barrel after passing through a terrible whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship under attack by fearsom...",
+        "rating":"PG-13",
+        "released":"2025",
+        "quality":"HD",
+        "image":"/images/home2.webp"
+    },
+    {
+        "id":"3",
+        "name":"With Vengeance, Sincerely, Your Broken Sainte...",
+        "categories":["Fantasy", "Romance"],
+        "description":"Barely surviving in a barrel after passing through a terrible whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship under attack by fearsom...",
+        "rating":"PG-13",
+        "released":"1999",
+        "quality":"HD",
+        "image":"/images/home3.webp"
+    },
+    {
+        "id":"4",
+        "name":"One Piece",
+        "categories":["Action", "Adventure", "Fantasy"],
+        "description":"Barely surviving in a barrel after passing through a terrible whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship under attack by fearsom...",
+        "rating":"PG-13",
+        "released":"1999",
+        "quality":"HD",
+        "image":"/images/home4.webp"
+    },
+    {
+        "id":"5",
+        "name":"Bobobo-bo Bo-bobo",
+        "categories":["Adventure", "Comedy", "Sci-Fi"],
+        "description":"In a futuristic world, the Maruhage Empire is a militant organization out to steal everyone's hair, and thus their freedom. But a brave man with an af...",
+        "rating":"PG-13",
+        "released":"2003",
+        "quality":"HD",
+        "image":"/images/home2.webp"
+    }
+
+]

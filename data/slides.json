@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Summer Anime Spotlight",
+      "image": "/images/filterimage2.jpg",
+      "description": "Check out this seasons hottest anime releases",
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": 2,
+      "title": "New Mystery Series",
+      "image": "/images/filterimage2.jpg",
+      "description": "Uncover secrets in this thrilling new anime",
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": 3,
+      "title": "Classic Anime Remaster",
+      "image": "/images/filterimage2.jpg",
+      "description": "Beloved classics now in 4K resolution",
+      "active": false,
+      "order": 3
+    }
+  ]

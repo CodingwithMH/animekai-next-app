@@ -1,0 +1,19 @@
+[
+    {
+        "name":"type",
+        "values":["TV","Movie","ONA","OVA","Special"]
+    },
+    {
+
+        "name":"genre",
+        "values":["Action","Adventure","Cars","Comedy","Dementia","Demons","Drama","Ecchi","Fantasy","Game","Herem","Hintai","Historical","Horror","Josei","Kids","Magic","Martial Arts","Mecha","Military"]
+    },
+    {
+        "name":"status",
+        "values":["Not yet aired","Currently Airing","Finished Airing"]
+    },
+    {
+        "name":"total_episodes",
+        "values":["Updated Date","Release Date","End Date","Edit Date","Trending","Name A-Z","Average Score"]
+    }
+]
