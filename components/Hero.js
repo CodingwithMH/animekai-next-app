@@ -50,7 +50,7 @@ const Hero = () => {
             <p>Court, Spy X Family Season, A Wild Last Boss</p>
           </div>
           <Link
-            href={"/home"}
+            href={"/Home"}
             className="bg-[#E45F3A] hover:bg-[#fd7e14] text-white text-xl py-2 px-8 rounded-lg text-center"
           >
             Watch Now
